@@ -1,0 +1,11 @@
+thead tr,
+thead th {
+  text-align: center;
+}
+tbody tr {
+  text-align: center;
+}
+button {
+  border: none !important;
+  outline: none;
+}

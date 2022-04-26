@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/logo.png" />
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+    />
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>BOOKING SITE</title>
+  </head>
+  <style>
+    *,
+    div {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      overflow-x: hidden;
+      height: max-content;
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(
+        to right,
+        #c8bbb211,
+        #ceb7b718,
+        #e6d9de09,
+        #e4dfe23a
+      );
+    }
+    button {
+      padding: 10px 20px !important;
+      border-radius: 1px !important;
+      position: relative;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+      border: none !important;
+      outline: none !important;
+    }
+    button::after {
+      position: absolute !important;
+      content: "" !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      width: 0% !important;
+      height: 0% !important;
+      background-color: rgba(255, 255, 255, 0.493) !important;
+      opacity: 0.5 !important;
+      transition: 0.2s ease !important;
+    }
+    button:hover::after {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    form button {
+      float: right;
+    }
+    th,
+    tr {
+      font-size: 14px !important;
+    }
+    .form-container {
+      border-radius: 6px;
+      border-right: 1px solid rgba(0, 0, 0, 0.452);
+      background-color: #fff;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+    }
+    .reset-padding-table,
+    table {
+      background-color: #fff;
+      border-radius: 6px 6px 6px 6px;
+      padding: 0 20px;
+      margin-top: 20px;
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.253);
+    }
+    form .form-control {
+      width: 100% !important;
+      border-right: 1px solid black;
+      transition: 0.5s ease;
+    }
+    form .form-control:hover {
+      border-right: 2px solid rgb(158, 30, 30);
+    }
+    .type-table {
+      height: 500px !important;
+      overflow-y: scroll;
+      scrollbar-color: red;
+    }
+    .tippy__img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .pagination {
+      background-color: red;
+      position: sticky;
+      top: 600px;
+    }
+    tr {
+      line-height: 100px !important;
+      height: 100px !important;
+    }
+    .avatar__image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .imgOfHotel {
+      position: relative;
+    }
+
+    .labelOfHotel {
+      position: absolute;
+      right: 20px;
+      opacity: 0;
+      z-index: -3;
+      transition: 0.7s ease;
+    }
+    .imgOfHotel:hover .labelOfHotel {
+      right: 0px;
+      opacity: 1;
+      z-index: 1;
+    }
+  </style>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
